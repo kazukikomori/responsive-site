@@ -1,0 +1,70 @@
+@import "compass";
+
+//font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+//colors
+$baseColor: white;
+$subColor: #FFF5AC;
+$keyColor: #FF6300;
+$fontColor: black;
+$bkColor: gray;
+
+/*Base
+-----------------------------------------------------------*/
+html { font-size: 62.5%; }
+
+body{
+    color: $fontColor;
+    font-size: 1.4rem;
+    font-family: $baseFontFamily;
+    letter-spacing: 0.1rem;
+    line-height: 1rem;
+    background-color: $baseColor;
+}
+
+a {
+    @include link-colors($keyColor, darken($keyColor, 15%), lighten($keyColor, 10%), darken($keyColor, 30%));
+    text-decoration: none;
+}
+
+/*Align
+-----------------------------------------------------------*/
+.text-center {
+    text-align: center;
+}
+
+/*Layout
+-----------------------------------------------------------*/
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// desktop
+@media (min-width: 769px) {
+    
+    /*Base
+    -----------------------------------------------------------*/
+    a {
+      &:hover {
+          color: darken($keyColor, 15%);
+      }
+    }
+}
+
+/*Header
+-----------------------------------------------------------*/
+.top-img {
+    background-image: url("../images/img_header.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    background-position: center center;
+    height: 500px;
+    width: 100%;
+// 元画像はW:750px H:500px
+}
+
+/*content
+-----------------------------------------------------------*/
