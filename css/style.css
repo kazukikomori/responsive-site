@@ -47,7 +47,16 @@ a {
   background-size: 100% 500px;
   background-position: center center;
   height: 500px;
-  width: 100%; }
+  max-width: 100%; }
+
+@media (max-width: 768px) {
+  .top-img {
+    height: 250px;
+    background-size: 100% 250px;
+    background-position: center center;
+    max-width: 100%;
+  }
+}
 
 /*content
 -----------------------------------------------------------*/
@@ -121,7 +130,7 @@ section h1 {
   display: block;
   width: 50%;
   height: 50px;
-  margin: auto;
+  margin: 10px auto;
   color: #FFF;
   background-color: #14c0c9;
   -moz-border-radius: 4px;
