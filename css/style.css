@@ -57,7 +57,7 @@ section {
 section .container {
   width: 90%; }
 
-section h2 {
+section h1 {
   font-size: 5rem; 
   text-transform: uppercase;
 }
@@ -73,7 +73,7 @@ section h2 {
   flex-direction: column;
 }
 
-#fruits h2 {
+#fruits h1 {
   color: gold;
   font-weight: uppercase;
   margin-bottom: 60px;
@@ -127,5 +127,11 @@ section h2 {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
+  
+@media (min-width: 769px) {
+  #order a:hover {
+    background-color: #0f949b; 
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
